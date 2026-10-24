@@ -1,0 +1,52 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+#heartCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.message {
+    position: fixed;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #ff8bdc;
+    font-family: Arial, sans-serif;
+    pointer-events: none;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.message h1 {
+    font-size: 34px;
+    font-weight: 300;
+}
+
+.message p {
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.6;
+        text-shadow: 0 0 5px #ff42c8;
+    }
+    to {
+        opacity: 1;
+        text-shadow: 0 0 20px #ff42c8;
+    }
+}
